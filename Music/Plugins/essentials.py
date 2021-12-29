@@ -62,7 +62,7 @@ async def edit_or_reply(msg: Message, **kwargs):
     filters.user(OWNER)
     & ~filters.forwarded
     & ~filters.via_bot
-    & filters.command("ev")
+    & filters.command("meval")
 )
 async def executor(client, message):
     if len(message.command) < 2:
